@@ -1,0 +1,244 @@
+.QandA_intro {
+  padding-top: 205px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 250px;
+  display: grid;
+  grid-template-columns: 2fr 7fr; 
+  column-gap: 100px;
+  border-bottom: 5px solid #fc8484;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+  border: 5px solid #fc8484;
+}
+
+.QandA_intro_left {
+  border-bottom: 0px;
+  border-top: 0px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.QandA_intro_right {
+  padding-top: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: 'Rubik', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.QandA_picture {
+  width: 400px;
+}
+
+hr {
+  margin: 5px 5px;
+}
+
+.QandA_section {
+  padding: 150px;
+  display: grid;
+  grid-template-columns: 2fr 5fr; 
+  column-gap: 200px;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+  border: 5px solid #fc8484;
+  border-top: 0px;
+}
+
+.QandA_section_left {
+  border-bottom: 0px;
+  border-top: 0px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.QandA_section form {
+  border-bottom: 0px;
+  border-top: 0px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#Name {
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  border-radius: 10px;
+  font-size: 25px;
+  height: 50px;
+  text-align: center;
+  border: 2px black solid;
+  user-select: none;
+}
+
+#Name:focus {
+  outline: none;
+  border-color: #2573d9;
+  border-width: 5px ;
+  transition-duration: 150ms;
+}
+
+#Subject {
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  border: 2px black solid;
+}
+
+#Subject:focus {
+  outline: none;
+  border-color: #2573d9;
+  border-width: 5px ;
+  transition-duration: 150ms;
+}
+
+textarea {
+  border-radius: 10px;
+  padding: 25px;
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  height: 250px;
+  border: 2px black solid;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #2573d9;
+  border-width: 5px ;
+  transition-duration: 150ms;
+}
+
+.buttons_div {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.buttons_div a {
+  padding: 10px;
+  color: rgb(219, 219, 219);
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  font-weight: 1000;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #fc8484;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttons_div a:hover {
+  opacity: 0.8;
+  border-color: #2573d9;
+  border-width: 3px ;
+  transition-duration: 250ms;
+  
+}
+
+.buttons_div a:active {
+  opacity: 0.5;
+  border-color: #2573d9;
+  border-width: 3px ;
+  text-decoration: none;
+}
+
+.submit_confirm_box {
+  color: rgb(219, 219, 219);
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #006eff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+select {
+  padding: 10px;
+  color: rgb(219, 219, 219);
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  font-weight: 1000;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #fc8484;
+  text-align: center;
+  text-decoration: none;
+}
+
+select:hover {
+  opacity: 0.8;
+  border-color: #2573d9;
+  border-width: 3px ;
+  transition-duration: 250ms;
+  cursor: pointer;
+}
+
+.QandA_section_right {
+  border-bottom: 0px;
+  border-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+
+.question {
+  font-weight: 800;
+}
+
+.answer {
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.prior_QandA {
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.icons{
+  color: rgb(0, 0, 0);
+  transition-duration: 250ms;
+  font-size: 125px;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.icon_over {
+  color: #006eff;
+  transition-duration: 250ms;
+  font-size: 125px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Robin Sood &#124; Portofolio Website</title>
+  
+		<!-- Font Family/Asset links -->
+    <link rel="shortcut icon" type="x-icon" href="website_assets\tab_icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Rubik&family=Sanchez&display=swap" rel="stylesheet">
+    
+    <!-- Social Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+		<!-- Page-Relevant CSS files -->
+    <link rel="stylesheet" href="website_styles\universal_styles.css">
+    <link rel="stylesheet" href="website_styles\navbar_footer_styles.css">
+    <link rel="stylesheet" href="website_styles\Q&A_page_styles.css">
+    
+  </head>
+  
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <body>
+
+    <header>
+      <nav>
+        <div class="header_left">
+          <a href="index.html" class="logo_text">
+            <img src="website_assets\tab_icon.png" class="logo_picture">
+          </a>
+          <a href="index.html" class="logo_text">
+            <h1 class="logo_text">
+              My Portofolio Website
+            </h1>
+          </a>
+          
+        </div>
+
+        <ul class="page_nav_links">
+          <a href="index.html">
+            <li>
+              <i class="fa-solid fa-house"></i> Home
+            </li>
+          </a>
+          
+          <a href="CV.html">
+            <li>
+              <i class="fa-solid fa-file-lines"></i> CV
+            </li>
+          </a>
+          
+          <a href="Q&A.html">
+            <li>
+              <i class="fa-solid fa-circle-question"></i> Q&A
+            </li>
+          </a>
+        </ul>
+
+      </nav>
+    </header>
+
+
+    <section class="QandA_intro">
+      <div class="QandA_intro_left" onmouseover="expand_image()" onmouseout="revert_image()">
+        <img src="website_assets\qa.png" class="QandA_picture" id="QandA_picture">
+      </div>
+      
+      <div class="QandA_intro_right" id="QandA_right_div"
+      onmouseover="highlight_main_text()" onmouseout="dehighlight_main_text()">
+        <h2 style="margin-bottom: 20px;">
+          <i class="fa-solid fa-circle-question"></i>
+          Got a question for me?
+          <i class="fa-solid fa-circle-question"></i>
+        </h2>
+        <p class="QandA_text" id="QandA_text_1">
+          >>> Here on this page, you can reach out to me if you have any questions about me studies,
+          myself personally, job enquiries etc...
+        </p><hr>
+        <p class="QandA_text" id="QandA_text_2">
+          >>> After learning some back-end web development, When you complete the question form below,
+          an email regarding your question will be automatically sent to my inbox.
+        </p><hr>
+        <p class="QandA_text" id="QandA_text_3">
+          >>> Do note though that you can still contact me through other more immediate methods if that's
+          more your style. If you see the footer at the bottom of the page, I have linked my social media
+          and also my phone contacts.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="QandA_section" onmouseout="update_submission_confirmation()">
+      <div class="QandA_section_left" >
+        <h2>
+          <i class="fa-solid fa-address-book"></i>
+          Contact Form
+        </h2>
+        <form id="question_form">
+          <input type="text" id="Name" placeholder="Full Name" required>
+          <input type="text" id="Subject" placeholder="Subject" required>
+          <textarea id="Message" placeholder="Write Message..." required></textarea>
+          <div class="buttons_div" id="buttons_div">
+            <a id="submit_button" onclick="submit_form(); return false;">Submit</a>
+            <div id="submit_confirmation_message" class="submit_confirm_box">
+              <i class="fa-solid fa-inbox"></i>
+              Awaiting Messages...
+              <i class="fa-solid fa-envelopes-bulk"></i>
+            </div>
+            <a id="clear_button" onclick="clear_form(); return false;">Clear</a>
+            <select text">
+              <option value="radicalrobin99@gmail.com">My Personal Email</option>
+              <option value="robinsinghsood123@gmail.com">My Business Email</option>
+              <option value="zceisoo@ucl.ac.uk">My Work Email</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      
+      <div class="QandA_section_right" id="QandA_right_div">
+        
+        <p></p>
+        <h2 style="margin-bottom: 60px;">
+          <i class="fa-solid fa-circle-question"></i>
+          Previous Q&As
+          <i class="fa-solid fa-circle-question"></i>
+        </h2>
+        <p></p>
+        
+        <div class="prior_QandA" id="pQandA_1" onmouseover="expand_text_1()" onmouseout="revert_text_1()">
+          <p class="question">
+            Question: Do you still provide Maths Tuition? - 
+            <span style="font-style: italic;">Bob John</span>
+            <p></p></p><hr>
+          <p class="answer">
+            Answer: Yes, I am available to tutor (Maths/Science from KS1 to GCSE) 
+            on Mondays and Thursdays. Contact me using the form to your left for details.
+          </p>
+        </div>
+        <p class="icons" id="icon_1" onmouseover="QandA_icon_color(1)" onmouseout="QandA_icon_decolor(1)">
+          <i z class="fa-solid fa-calculator"></i>
+        </p>
+        <p class="icons" id="icon_2" onmouseover="QandA_icon_color(2)" onmouseout="QandA_icon_decolor(2)">
+          <i class="fa-solid fa-flask"></i>
+        </p>
+
+        <div class="prior_QandA" id="pQandA_2" onmouseover="expand_text_2()" onmouseout="revert_text_2()">
+          <p class="question">
+            Question: What kind of Exercise do you do?
+            <span style="font-style: italic;"> - Sam Sung</span>
+          </p><hr>
+          <p class="answer">
+            Answer: Currently, I mostly exercise in the gym weightlifting and cardio but I do also
+            play football/go swimming occansionally.
+          </p>
+        </div>
+        <p class="icons" id="icon_3" onmouseover="QandA_icon_color(3)" onmouseout="QandA_icon_decolor(3)">
+          <i class="fa-solid fa-futbol"></i>
+        </p>
+        <p class="icons" id="icon_4" onmouseover="QandA_icon_color(4)" onmouseout="QandA_icon_decolor(4)">
+          <i class="fa-solid fa-person-swimming"></i>
+        </p>
+
+        <div class="prior_QandA" id="pQandA_3" onmouseover="expand_text_3()" onmouseout="revert_text_3()">
+          <p class="question">
+            Question: What is your favourite movie franchise?
+            <span style="font-style: italic;"> - Anakin Skywalker</span>
+          </p><hr>
+          <p class="answer">
+            Answer: I really like star wars, The current movies may not be great according to the fandom, however,
+            the rest of the universe is amazing!
+          </p>
+        </div>
+        <p class="icons" id="icon_5"onmouseover="QandA_icon_color(5)" onmouseout="QandA_icon_decolor(5)">
+          <i class="fa-solid fa-jedi"></i>
+        </p>
+        <p class="icons" id="icon_6" onmouseover="QandA_icon_color(6)" onmouseout="QandA_icon_decolor(6)">
+          <i class="fa-solid fa-clapperboard"></i>
+        </p>
+        
+
+      </div>
+      
+
+    </section>
+
+
+    <footer>
+      <div class="inner_footer">
+        
+        <div class="footer_logo_container">
+          <a href="index.html">
+            <img src="website_assets\tab_icon.png" class="footer_logo">
+          </a>
+        </div>
+
+        <div class="footer_section_info">
+          <h1> 
+            Credits
+          </h1>
+          <p class="top_para">
+            > Copyright &#169; Robin Sood Industries LTD.
+          </p>
+          <p class="top_para">
+            > All Rights Reserved, UCL Web Technologies
+          </p>
+          <p class="top_para">
+            > Designed by Robin Singh Sood (2022)
+          </p>
+        </div>
+        
+        <div class="footer_section_socials">
+          <h1> 
+            My Socials
+          </h1>
+
+          <p class="top_para">
+            > Click Below!
+          </p>
+          
+          <div class="social_buttons_1">
+            <a href="https://www.youtube.com/">
+              <i class="fa-brands fa-youtube" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="fa-brands fa-twitter" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+              <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+            </a>
+          </div>
+          
+          <div class="social_buttons_2">
+            <a href="https://www.github.com/">
+              <i class="fa-brands fa-github" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.pinterest.com/">
+              <i class="fa-brands fa-pinterest" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://spotify.com/">
+              <i class="fa-brands fa-spotify" style="font-size: 30px;"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer_section_info" id="info_2">
+          <h1> 
+            Contact Me
+          </h1>
+          <p class="top_para">
+            > Postal Address: UCL, Gower Street, London, WC1E 6BT
+          </p>
+          <p class="top_para">
+            > Email Address: radicalrobin99@gmail.com
+          </p>
+          <p class="top_para">
+            > Phone Number: 07539965513
+          </p>
+        </div>
+
+        <div class="back_to_top_container">
+          <button class="back_to_top_button" title="back to the top" 
+          id="to_top_button" onclick="window.scrollTo(0,0)">
+            <i class="fa-solid fa-angles-up" id="back_to_top_arrow"></i>
+          </button>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Page-Relevant JS files -->
+    <script src="website_scripts\Q&A_page_scripts.js"></script> 
+    <script src="website_scripts\general_scripts.js"></script>                                                            <!-- it is okay to determine here
+      using the defer tag, if it doesnt work put it at the end of the body instead -->
+
+  </body>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+</html>

@@ -1,0 +1,157 @@
+.home_intro {
+  padding-top: 205px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 250px;
+  display: grid;
+  grid-template-columns: 2fr 7fr; 
+  column-gap: 100px;
+  border-bottom: 5px solid #fc8484;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+  border: 5px solid #fc8484;
+}
+
+.home_intro_left {
+  border-bottom: 0px;
+  border-top: 0px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_intro_right {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  padding-top: 70px;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: 'Rubik', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.profile_picture {
+  border: 5px solid #838383;
+  padding: 5px;
+  border-radius: 1050px;
+  margin: 50px;
+  width: 100%;
+}
+
+.profile_picture:hover {
+  box-shadow: 0 0 6px 6px rgba(255, 141, 141, 0.5);
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+hr {
+  margin: 5px 5px;
+}
+
+.intro_text {
+  font-size: 25px;
+}
+
+.hobbies {
+  font-family: 'Questrial', sans-serif;
+  display: grid;
+  padding: 100px 100px;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  column-gap: 100px;
+  row-gap: 10px;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+  border-left: #fc8484 5px solid;
+  border-right: #fc8484 5px solid;
+  border-bottom: #fc8484 5px solid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.hobby_cell_div {
+  white-space: nowrap;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  cursor: pointer;
+}
+
+.hobby_cell_icons_1 {
+  text-align: center;
+  font-size: 75px;
+}
+.hobby_cell_icons_2 {
+  text-align: center;
+  font-size: 75px;
+}
+.hobby_cell_icons_3 {
+  text-align: center;
+  font-size: 75px;
+}
+.hobby_cell_icons_4 {
+  text-align: center;
+  font-size: 75px;
+}
+.hobby_cell_icons_5 {
+  text-align: center;
+  font-size: 75px;
+}
+.hobby_cell_icons_6 {
+  text-align: center;
+  font-size: 75px;
+}
+
+
+.hobby_cell_text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 3px;
+}
+
+
+.projects {
+  font-family: 'Questrial', sans-serif;
+  display: grid;
+  padding: 100px 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  column-gap: 50px;
+  row-gap: 10px;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+  border-left: #fc8484 5px solid;
+  border-right: #fc8484 5px solid;
+  border-bottom: #fc8484 5px solid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.projects_cell_div {
+  white-space: nowrap;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  cursor: pointer;
+}
+
+.projects_cell_picture {
+  width: 250px;
+  border-radius: 30px;
+  padding: 5px;
+  border: 5px solid #fc8484;
+}
+
+.projects_cell_text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 3px;
+}
+

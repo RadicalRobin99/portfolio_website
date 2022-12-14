@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Robin Sood &#124; Portofolio Website</title>
+  
+		<!-- Font Family/Asset links -->
+    <link rel="shortcut icon" type="x-icon" href="website_assets\tab_icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Rubik&family=Sanchez&display=swap" rel="stylesheet">
+    
+    <!-- Social Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+		<!-- Page-Relevant CSS files -->
+    <link rel="stylesheet" href="website_styles\universal_styles.css">
+    <link rel="stylesheet" href="website_styles\navbar_footer_styles.css">
+    <link rel="stylesheet" href="website_styles\index_page_styles.css">
+
+  </head>
+  
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <body>
+
+    <header>
+      <nav>
+        <div class="header_left">
+          <a href="index.html" class="logo_text">
+            <img src="website_assets\tab_icon.png" alt="website_icon" class="logo_picture">
+          </a>
+          <a href="index.html" class="logo_text">
+            <h1 class="logo_text">
+              My Portofolio Website
+            </h1>
+          </a>
+          
+        </div>
+
+        <ul class="page_nav_links">
+          <a href="index.html">
+            <li>
+              <i class="fa-solid fa-house"></i> Home
+            </li>
+          </a>
+          
+          <a href="CV.html">
+            <li>
+              <i class="fa-solid fa-file-lines"></i> CV
+            </li>
+          </a>
+          
+          <a href="Q&A.html">
+            <li>
+              <i class="fa-solid fa-circle-question"></i> Q&A
+            </li>
+          </a>
+        </ul>
+
+      </nav>
+    </header>
+
+
+    <section class="home_intro">
+      <div class="home_intro_left">
+        <img src="website_assets\profile_picture.jpg" class="profile_picture">
+      </div>
+      
+      <div class="home_intro_right" id="home_right_div"
+      onmouseover="highlight_text()" onmouseout="dehighlight_text()">
+        <h2>
+          <i class="fa-solid fa-hands-clapping"></i>
+          Hey! Welcome to my Website!
+          <i class="fa-solid fa-hands-clapping"></i>
+        </h2>
+        <p class="intro_text" id="intro_text_1">
+          >>> Full Name: Robin Singh Sood / Age: 20 / Preferred Pronouns: He/Him / 
+          Ethnicity: British (Indian Descent) / Religion: Sikh / 
+          Hometown: Harrow (Northwest London)
+          
+        </p><hr>
+        <p class="intro_text" id="intro_text_2">
+          >>> Hi, Thanks for visiting! I'm Robin, a first year currently studying 
+          "Information Management for Business" (IMB) at "University College London" (UCL).
+        </p><hr>
+        <p class="intro_text" id="intro_text_3">
+          >>> Through this site, I aim to create my webpages as per the criteria set in the assessment brief.
+          Moreover, I am going to write up a separate report/presentation regarding my learning process. 
+          However, I will also try to go into detail about myself, my hobbies/interests and digital CV.
+        </p>
+      </div>
+    </section>
+
+    <section class="hobbies" id="hobbies_div"> <!-- acco = noteable accolades -->
+      <p></p><p></p><h2 id="hobby_header"><i class="fa-solid fa-face-smile-beam"></i> My Hobbies/Interests</h2><p></p><p></p>
+      
+      
+      <div class="hobby_cell_div" id="hobby_cell_1"
+      onmouseover="hobby_cell_1_over()" onmouseout="hobby_cell_1_out()">
+        <p class="hobby_cell_icons_1" id="hobby_cell_icons_1">
+          <i class="fa-solid fa-tree"></i>
+          <i class="fa-solid fa-toolbox"></i>
+        </p>
+        <p class="hobby_cell_text" id="hobby_cell_1_text">
+          Woodworking
+        </p>
+      </div>
+      
+      <div class="hobby_cell_div" id="hobby_cell_2"
+      onmouseover="hobby_cell_2_over()" onmouseout="hobby_cell_2_out()">
+        <p class="hobby_cell_icons_2" id="hobby_cell_icons_2">
+          <i class="fa-solid fa-dumbbell"></i>
+          <i class="fa-solid fa-person-running"></i>
+        </p>
+        <p class="hobby_cell_text" id="hobby_cell_2_text">
+          Exercise
+        </p>
+      </div>
+
+      <div class="hobby_cell_div" id="hobby_cell_3"
+      onmouseover="hobby_cell_3_over()" onmouseout="hobby_cell_3_out()">
+        <p class="hobby_cell_icons_3" id="hobby_cell_icons_3">
+          <i class="fa-solid fa-laptop-code"></i>
+          <i class="fa-solid fa-network-wired"></i>
+          <i class="fa-solid fa-robot"></i>
+        </p>
+        <p class="hobby_cell_text" id="hobby_cell_3_text">
+          Computer Science
+        </p>
+      </div>
+
+
+      <div class="hobby_cell_div" id="hobby_cell_4"
+      onmouseover="hobby_cell_4_over()" onmouseout="hobby_cell_4_out()">
+        <p class="hobby_cell_icons_4" id="hobby_cell_icons_4">
+          <i class="fa-solid fa-fish"></i>
+          <i class="fa-solid fa-water"></i>
+        </p>
+        <p class="hobby_cell_text" id="hobby_cell_4_text">
+          Marine Biology
+        </p>
+      </div>
+
+      <div class="hobby_cell_div" id="hobby_cell_5"
+      onmouseover="hobby_cell_5_over()" onmouseout="hobby_cell_5_out()">
+        <p class="hobby_cell_icons_5" id="hobby_cell_icons_5">
+          <i class="fa-solid fa-recycle"></i>
+          <i class="fa-solid fa-earth-europe"></i>
+        </p>
+        <p class="hobby_cell_text" id="hobby_cell_5_text">
+          Sustainability
+        </p>
+      </div>
+
+      
+    </section>
+
+
+    <section class="projects">
+      <p></p><p></p><h2><i class="fa-solid fa-compass"></i> My Projects Portofolio</h2><p></p><p></p>
+      
+      <div class="projects_cell_div" id="projects_cell_1"
+      onmouseover="projects_cell_1_over()" onmouseout="projects_cell_1_out()">
+        <img src="website_assets/project_1.png" class="projects_cell_picture">
+        <p class="projects_cell_text" id="projects_cell_1_text">
+          Pygame Platformer
+        </p>
+      </div>
+      
+      <div class="projects_cell_div" id="projects_cell_2"
+      onmouseover="projects_cell_2_over()" onmouseout="projects_cell_2_out()">
+        <img src="website_assets/project_2.png" class="projects_cell_picture">
+        <p class="projects_cell_text" id="projects_cell_2_text">
+          Tic-Tac-Toe (Website)
+        </p>
+      </div>
+      
+      <div class="projects_cell_div" id="projects_cell_3"
+      onmouseover="projects_cell_3_over()" onmouseout="projects_cell_3_out()">
+        <img src="website_assets/project_3.png" class="projects_cell_picture">
+        <p class="projects_cell_text" id="projects_cell_3_text">
+          Youtube Clone
+        </p>
+      </div>
+      
+      <div class="projects_cell_div" id="projects_cell_4"
+      onmouseover="projects_cell_4_over()" onmouseout="projects_cell_4_out()">
+        <img src="website_assets/project_4.png" class="projects_cell_picture">
+        <p class="projects_cell_text" id="projects_cell_4_text">
+          CLI library system
+        </p>
+      </div>
+      
+      <div class="projects_cell_div" id="projects_cell_5"
+      onmouseover="projects_cell_5_over()" onmouseout="projects_cell_5_out()">
+        <img src="website_assets/project_5.png" class="projects_cell_picture">
+        <p class="projects_cell_text" id="projects_cell_5_text">
+          Graphing Calculator
+        </p>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="inner_footer">
+        
+        <div class="footer_logo_container">
+          <a href="index.html">
+            <img src="website_assets\tab_icon.png" class="footer_logo">
+          </a>
+        </div>
+
+        <div class="footer_section_info">
+          <h1> 
+            Credits
+          </h1>
+          <p class="top_para">
+            > Copyright &#169; Robin Sood Industries LTD.
+          </p>
+          <p class="top_para">
+            > All Rights Reserved, UCL Web Technologies
+          </p>
+          <p class="top_para">
+            > Designed by Robin Singh Sood (2022)
+          </p>
+        </div>
+        
+        <div class="footer_section_socials">
+          <h1> 
+            My Socials
+          </h1>
+
+          <p class="top_para">
+            > Click Below!
+          </p>
+          
+          <div class="social_buttons_1">
+            <a href="https://www.youtube.com/">
+              <i class="fa-brands fa-youtube" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="fa-brands fa-twitter" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+              <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+            </a>
+          </div>
+          
+          <div class="social_buttons_2">
+            <a href="https://www.github.com/">
+              <i class="fa-brands fa-github" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.pinterest.com/">
+              <i class="fa-brands fa-pinterest" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://spotify.com/">
+              <i class="fa-brands fa-spotify" style="font-size: 30px;"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer_section_info">
+          <h1> 
+            Contact Me
+          </h1>
+          <p class="top_para">
+            > Postal Address: UCL, Gower Street, London, WC1E 6BT
+          </p>
+          <p class="top_para">
+            > Email Address: radicalrobin99@gmail.com
+          </p>
+          <p class="top_para">
+            > Phone Number: 07539965513
+          </p>
+        </div>
+
+        <div class="back_to_top_container">
+          <button class="back_to_top_button" title="back to the top" 
+          id="to_top_button" onclick="window.scrollTo(0,0)">
+            <i class="fa-solid fa-angles-up" id="back_to_top_arrow"></i>
+          </button>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Page-Relevant JS files -->
+    <script src="website_scripts\index_page_scripts.js"></script>
+    <script src="website_scripts\general_scripts.js"></script>
+
+  </body>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+</html>

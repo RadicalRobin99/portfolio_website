@@ -1,0 +1,114 @@
+.cv_intro {
+  padding: 100px 250px;
+  padding-top: 175px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 125px;
+
+  border-bottom: 5px solid #fc8484;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+
+  border-left: #fc8484 5px solid;
+  border-right: #fc8484 5px solid;
+  
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: 'Rubik', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.cv_intro div {
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.testimonial main_text{
+  text-align: left;
+  margin-left: 50px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.testimonial_subtext {
+  text-align: right;
+  font-style: italic;
+}
+
+.acco_edu_exp {
+  display: grid;
+  padding: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  box-shadow: inset 0px 10px 10px #cfcccc;
+  border-bottom: 5px solid #fc8484;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+  border-left: #fc8484 5px solid;
+  border-right: #fc8484 5px solid;
+}
+
+.acco_edu_exp div{
+  color: rgb(0, 0, 0);
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  
+}
+
+.education {
+  text-align: center;
+}
+
+.experience {
+  text-align: right;
+}
+
+hr {
+  margin: 5px;
+}
+
+.skills {
+  font-family: 'Questrial', sans-serif;
+  display: grid;
+  padding: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 5px;
+  box-shadow: inset 0px -5px 100px #cfcccc;
+  border-left: #fc8484 5px solid;
+  border-right: #fc8484 5px solid;
+  border-bottom: #fc8484 5px solid;;
+  justify-content: center;
+  justify-items: center;
+}
+
+.skill_cell_div {
+
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  cursor: pointer;
+}
+
+.skill_cell_icon {
+  text-align: center;
+  font-size: 75px;
+}
+
+.skill_cell_text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1px;
+}
+
+

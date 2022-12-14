@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Robin Sood &#124; Portofolio Website</title>
+  
+		<!-- Font Family/Asset links -->
+    <link rel="shortcut icon" type="x-icon" href="website_assets\tab_icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sanchez&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Rubik&family=Sanchez&display=swap" rel="stylesheet">
+
+    <!-- Social Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+
+		<!-- Page-Relevant CSS files -->
+    <link rel="stylesheet" href="website_styles\universal_styles.css">
+    <link rel="stylesheet" href="website_styles\navbar_footer_styles.css">
+    <link rel="stylesheet" href="website_styles\CV_page_styles.css">
+
+    
+    
+  </head>
+  
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <body>
+
+    <header>
+      <nav>
+        <div class="header_left">
+          <a href="index.html" class="logo_text">
+            <img src="website_assets\tab_icon.png" class="logo_picture">
+          </a>
+          <a href="index.html" class="logo_text">
+            <h1 class="logo_text">
+              My Portofolio Website
+            </h1>
+          </a>
+          
+        </div>
+
+        <ul class="page_nav_links">
+          <a href="index.html">
+            <li>
+              <i class="fa-solid fa-house"></i> Home
+            </li>
+          </a>
+          
+          <a href="CV.html">
+            <li>
+              <i class="fa-solid fa-file-lines"></i> CV
+            </li>
+          </a>
+          
+          <a href="Q&A.html">
+            <li>
+              <i class="fa-solid fa-circle-question"></i> Q&A
+            </li>
+          </a>
+        </ul>
+
+      </nav>
+    </header>
+
+    <section class="cv_intro" id="cv_intro_div"> 
+      <div class="personal_statement" id="personal_statement_div" 
+      onmouseover="expand_div(1)" onmouseout="to_normal_div(1)">
+        <h2>
+          <i class="fa-solid fa-user"></i> / Personal Statement
+        </h2>
+        <p>
+          >>> I am an enthusiastic, hardworking, highly motivated young person seeking employment within the Computing/IT & Business Management employment sectors.
+        </p><hr>
+        <p>
+          >>> I have a passionate desire to gain experience in the corporate sector along side my current degree. 
+        </p><hr>
+        <p>
+          >>> Acquired a great amount of technical knowledge and business skills throughout my studies and am eager to apply what I have learnt. 
+        </p><hr>
+        <p>
+          >>> Solid soft skills aswell so that I can communicate effectively, build relationships and collaborate as part of a team to achieve desired goals.
+        </p><hr>
+        <p>
+          >>> I believe that I can use my skills to become an invaluable member of any team and bring value to my prospective employer.
+        </p>
+      </div>
+      
+      <div class="testimonial" id="testimonial_div"
+      onmouseover="expand_div(2)" onmouseout="to_normal_div(2)">
+        <h2>
+          <i class="fa-solid fa-people-arrows"></i> \ My References
+        </h2> 
+        <p class="main_text">
+          >>> "Robin is one of the best students that I've had the pleasure of teaching. He always puts in 110%, gets his work done and offers to help his peers."
+        </p> 
+        <p class="testimonial_subtext">
+          Adrian Segar - Former Mathematics Teacher (2015 - 2021)
+        </p><hr>
+
+        <p class="main_text">
+          >>> "I love working with Robin. I always put a premium on work ethic among my team members and Robin was constantly going above and beyond."
+        </p>
+        <p class="testimonial_subtext">
+          Sanjay Malipuri - ITSU Team Manager (2022)
+        </p><hr>
+
+        <p class="main_text">
+          >>> "Robin is really cool man! He is a great teacher and I think you should hire him!"
+        </p>
+        <p class="testimonial_subtext" id="k_test">
+          Krystal Kaur Sood - Robin's Sister (2009 - Present)
+        </p>
+      </div>
+    </section>   
+
+    <section class="acco_edu_exp"> <!-- acco = noteable accolades -->
+      <div class="accolades_div" id="accolades_div"
+      onmouseover="expand_div(3)" onmouseout="to_normal_div(3)">
+        <h2>
+          <i class="fa-solid fa-trophy"></i> / Accolades
+        </h2>
+        <p>
+          >>> Participated in Cambridge University Robotics Competition
+        </p><hr>
+        <p>
+          >>> Represented my Class in my year-group wide ‘Jack Petchey – Speeches and public speaking 
+          competition.
+        </p><hr>
+        <p>
+          >>> Achieved runner up position in the school-wide ‘Coca-Cola Enterprises’ Business Challenge and led 
+          the sub-team in the marketing of our product.  
+        </p><hr>
+        <p>
+          >>> Represented my school in the team nationwide maths challenge and achieved certificate level 
+          grades in all maths challenges I entered.  
+        </p>
+      </div>
+      
+      <div class="education" id="education_div"
+      onmouseover="expand_div(4)" onmouseout="to_normal_div(4)">
+        <h2>
+          <i class="fa-solid fa-user-graduate"></i> | Education
+        </h2>
+        <p>
+          >>> Cannon Lane Primary School (2006 - 2014) / Graduated with level 6 UK SATs  
+        </p><hr>
+        <p>
+          >>> Haydon High School (2014 - 2021) / Graduated with 11 GCSEs &
+          3 Alevel in Maths (A*), Computer Science (A), Physics (A)
+        </p><hr>
+        <p>
+          >>> (UCL) University College London (2022 - Present)  
+        </p><hr>
+        <p>
+          >>> Udemy - The Comprehensive Python Masterclass (Janurary 2022 - April 2022)
+        </p>
+      </div>
+
+      <div class="experience" id="experience_div"
+      onmouseover="expand_div(5)" onmouseout="to_normal_div(5)">
+        <h2>
+          <i class="fa-solid fa-briefcase"></i> \ Experience
+        </h2>
+        <p>
+          >>> ITSU / Team Member / Responsibilities: Food cooking/preparation, Customer Tilling, Accepting deliveries/transferring stock (March 2022 - June 2022)  
+        </p><hr>
+        <p>
+          >>> Suntech Digial / Software Engineering Intern / Responsibilities: debugging software, drawing up UML diagrams, writing code in Python, Java, C++ (July 2021)  
+        </p><hr>
+        <p>
+          >>> Haydon High School / Maths Tutor / Responsibilities: Creating lesson plans for maths lessons, 1-on-1 maths tutoring, Marking exam papers, teaching assistance (September 2019 - May 2021)
+        </p>
+      </div> 
+    </section>
+
+    <section class="skills" id="skills_div"> <!-- acco = noteable accolades -->
+      <p></p><p></p><h2><i class="fa-sharp fa-solid fa-layer-group"></i> My Skills</h2><p></p><p></p>
+      
+      <div class="skill_cell_div" id="skill_cell_1"
+      onmouseover="skill_cell_1_over()" onmouseout="skill_cell_1_out()">
+        <p class="skill_cell_icon" id="cell_icons_1">
+          <i class="fa-solid fa-file-word" id="word_icon"></i>
+          <i class="fa-solid fa-file-powerpoint" id="ppt_icon"></i>
+          <i class="fa-solid fa-file-excel" id="excel_icon"></i>
+        </p>
+        <p class="skill_cell_text" id="skill_cell_1_text">
+          Word/Powerpoint/Excel
+        </p>
+      </div>
+      
+      <div class="skill_cell_div" id="skill_cell_2"
+      onmouseover="skill_cell_2_over()" onmouseout="skill_cell_2_out()">
+        <p class="skill_cell_icon" id="cell_icons_2">
+          <i class="fa-solid fa-users" id="users_icon"></i>
+          <i class="fa-solid fa-message" id="message_icon"></i>
+        </p>
+        <p class="skill_cell_text" id="skill_cell_2_text">
+          Teamwork/Communication
+        </p>
+      </div>
+      
+      <div class="skill_cell_div" id="skill_cell_3"
+      onmouseover="skill_cell_3_over()" onmouseout="skill_cell_3_out()">
+        <p class="skill_cell_icon" id="cell_icons_3">
+          <i class="fa-solid fa-chart-line" id="graph_icon_1"></i>
+          <i class="fa-sharp fa-solid fa-chart-column" id="graph_icon_2"></i>
+        </p>
+        <p class="skill_cell_text" id="skill_cell_3_text">
+          Business Intelligence
+        </p>
+      </div>
+      
+      <div class="skill_cell_div" id="skill_cell_4"
+      onmouseover="skill_cell_4_over()" onmouseout="skill_cell_4_out()">
+        <p class="skill_cell_icon" id="cell_icons_4">
+          <i class="fa-solid fa-school" id="school_icon"></i>
+          <i class="fa-solid fa-chalkboard-user" id="board_icon"></i>
+        </p>
+        <p class="skill_cell_text" id="skill_cell_4_text">
+          Tutoring/Teaching
+        </p>
+      </div>
+      
+      <div class="skill_cell_div" id="skill_cell_5"
+      onmouseover="skill_cell_5_over()" onmouseout="skill_cell_5_out()">
+        <p class="skill_cell_icon" id="cell_icons_5">
+          <i class="fa-brands fa-js" id="js_icon"></i>
+          <i class="fa-brands fa-python" id="python_icon"></i>
+          <i class="fa-brands fa-swift" id="swift_icon"></i>
+        </p>
+        <p class="skill_cell_text" id="skill_cell_5_text">
+          Programming
+        </p>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="inner_footer">
+        
+        <div class="footer_logo_container">
+          <a href="index.html">
+            <img src="website_assets\tab_icon.png" class="footer_logo">
+          </a>
+        </div>
+
+        <div class="footer_section_info">
+          <h1> 
+            Credits
+          </h1>
+          <p class="top_para">
+            > Copyright &#169; Robin Sood Industries LTD.
+          </p>
+          <p class="top_para">
+            > All Rights Reserved, UCL Web Technologies
+          </p>
+          <p class="top_para">
+            > Designed by Robin Singh Sood (2022)
+          </p>
+        </div>
+        
+        <div class="footer_section_socials">
+          <h1> 
+            My Socials
+          </h1>
+
+          <p class="top_para">
+            > Click Below!
+          </p>
+          
+          <div class="social_buttons_1">
+            <a href="https://www.youtube.com/">
+              <i class="fa-brands fa-youtube" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="fa-brands fa-twitter" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+              <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+            </a>
+          </div>
+          
+          <div class="social_buttons_2">
+            <a href="https://www.github.com/">
+              <i class="fa-brands fa-github" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://www.pinterest.com/">
+              <i class="fa-brands fa-pinterest" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://spotify.com/">
+              <i class="fa-brands fa-spotify" style="font-size: 30px;"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer_section_info" id="info_2">
+          <h1> 
+            Contact Me
+          </h1>
+          <p class="top_para">
+            > Postal Address: UCL, Gower Street, London, WC1E 6BT
+          </p>
+          <p class="top_para">
+            > Email Address: radicalrobin99@gmail.com
+          </p>
+          <p class="top_para">
+            > Phone Number: 07539965513
+          </p>
+        </div>
+
+        <div class="back_to_top_container">
+          <button class="back_to_top_button" title="back to the top" 
+          id="to_top_button" onclick="window.scrollTo(0,0)">
+            <i class="fa-solid fa-angles-up" id="back_to_top_arrow"></i>
+          </button>
+        </div>
+
+      </div>
+    </footer>
+
+  <!-- Page-Relevant JS files -->
+  <script src="website_scripts\CV_page_scripts.js"></script>
+  <script src="website_scripts\general_scripts.js"></script>
+
+  </body>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+</html>
